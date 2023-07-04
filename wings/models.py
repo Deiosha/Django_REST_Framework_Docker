@@ -4,7 +4,7 @@ from django.db import models
 
 class Wing(models.Model):
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    name = models.CharField(max_length=64)
+    name = models.CharField(max_length=65)
     description = models.TextField()
 
     created_at = models.DateTimeField(auto_now_add=True)
